@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+    <style>
+        body {
+            margin-left: 200px;
+            margin-right: 200px;
+
+        }
+
+        kbd {
+            border-radius: 2px;
+            padding: 2px;
+            border: 1px solid black;
+        }
+
+        code {
+            font-family: Consolas, "courier new";
+            padding: 2px;
+            font-size: 105%;
+        }
+
+        samp {
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">Coding Club WCE, Sangli</h1>
+    </header>
+    <hr>
+    <section>
+        <h1>Problem Statement</h1>
+        <pre>
+    HackerLand University has the following grading policy:
+    
+    Every student receives a <kbd>grade</kbd> the inclusive range from <kbd>0</kbd> to <kbd>100</kbd> .
+    Any  less than  is a failing grade.
+    Sam is a professor at the university and likes to round each student's  according to these rules:
+
+    If the difference between the  and the next multiple of  is less than , round  up to the
+    If the value of <kbd>grade</kbd> is less than <kbd>80</kbd> , no rounding occurs as the result will still be a failing grade.
+
+   <h3> Examples</h3>
+    <kbd>grade</kbd> = <kbd>84</kbd>  (85 - 84 is less than 3)
+
+    <kbd>grade</kbd> = <kbd>88</kbd>  do not round (result is less than 40)
+
+    <kbd>grade</kbd> = <kbd>89</kbd>  do not round (60 - 57 is 3 or higher)
+
+    Given the initial value of  for each of Sam's  students, write code to automate the rounding process.
+        </pre>
+    </section>
+    <hr>
+    <section>
+        <h1>Sample Input</h1>
+        <pre>
+            <samp>4</samp>
+            <samp>73</samp>
+            <samp>67</samp>
+            <samp>38</samp>
+            <samp>40</samp>
+        </pre>
+    </section>
+    <hr>
+    <section>
+        <h1>Sample Output</h1>
+        <pre>
+            <samp>4</samp>
+            <samp>73</samp>
+            <samp>67</samp>
+            <samp>38</samp>
+            <samp>40</samp>
+        </pre>
+    </section>
+    <hr>
+    <section>
+        <h1>Variables used in Program</h1>
+        <pre>
+        <var>x</var>   <var>y</var>  <var>n</var>
+        </pre>
+
+    </section>
+    <hr>
+    <section>
+        <h1>Code..</h1>
+        <code>
+            <pre>
+#include <bits/stdc++.h>
+#include<assert.h>
+
+using namespace std;
+
+void solution() {
+
+     int n, x;
+
+     cin >> n;
+
+     assert(n > 0 && n <= 60);
+
+     for(int i = 0; i < n; i++)
+     {
+        cin >> x;
+        assert(x >= 0 && x <= 100);
+        if(x >= 38)
+        {
+            int y = x;
+            while(1)
+            {
+               if(y % 5 == 0)
+				break;
+               y++;
+            }
+            if(y - x <= 2)
+             x = y;
+        }
+        cout << x << endl;
+     }
+}
+
+int main () {
+    
+        solution();
+
+    return 0;
+}
+            </pre>
+        </code>
+    </section>
+    <hr>
+    <section>
+        <h1>Complexity</h1>
+        The Complexity of the above program is <strong>O(n)</strong>
+    </section>
+    <hr>
+</body>
+
+</html>
