@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: inline-block;
+            border: 2px solid gray;
+            padding: 80px;
+            margin: 50px 50px;
+            width: 33%;
+            border-radius: 10px;
+
+
+        }
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            margin: auto;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 3px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(0, 255, 13);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>MPSC Exam 2021 Registration</h1>
+
+
+
+        <form action="/action_page.php">
+            <fieldset>
+                <legend><b>Student Information:</b></legend><br>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your First Name"><br><br>
+                <label for="fname">Middle name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your Middle Name"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last Name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email"><br><br>
+                <label for="email">Mobile No:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Mobile"><br><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <label for="cars">Choose a ID proof:</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Aadhar Card</option>
+                    <option value="saab">Voter Id</option>
+                    <option value="opel">Pan Card</option>
+                    <option value="audi">Ration Card</option>
+                </select><br><br>
+                Upload ID Proof:<input type="file" except="image/*"><br><br>
+                <label for="textarea">Address:</label>
+                <textarea rows="5" cols="45" placeholder="Enter your Address"></textarea>
+
+            </fieldset><br><br>
+            <fieldset>
+                <legend><b>Educational Information:</b></legend><br>
+                <label for="cars">Choose a Qualification:</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">BTECH</option>
+                    <option value="saab">MTECH</option>
+                    <option value="opel">BSC</option>
+                    <option value="audi">BA</option>
+                </select><br><br>
+                <label for="cars">Choose a Branch:</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Computer Engineering</option>
+                    <option value="saab">Civil Engineering</option>
+                    <option value="opel">Electrical Engineering</option>
+                    <option value="audi">Science</option>
+                    <option value="audi">Arts</option>
+                    <option value="audi">Commerce</option>
+                </select><br><br>
+                <label for="browser">Choose your University from the list:</label>
+                <input list="browsers" name="browser" id="browser" placeholder="University list">
+                <datalist id="browsers">
+                    <option value="Pune University">
+                    <option value="Mumbai University">
+                    <option value="Shivaji University ">
+                    <option value="Deccan University">
+                    <option value="Delhi University">
+                </datalist><br><br>
+                <label for="browser">Choose your College from the list:</label>
+                <input list="College" name="browser" id="browser" placeholder="Collge list">
+                <datalist id="College">
+                    <option value="Walchand Sangli">
+                    <option value="COEP Pune">
+                    <option value="VJTI Mumbai">
+                    <option value="IIT Delhi">
+                    <option value="NIT Nagpur">
+                </datalist><br><br>
+                <label for="email">Seat No:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your seat Number"><br><br>
+                
+               
+            </fieldset><br><br>
+            <fieldset>
+                <legend><b>Exam Preferances:</b></legend><br>
+                <label for="browser">Choose your Paper Branch from the list:</label>
+                <input list="paper" name="browser" id="browser" placeholder="Paper list" required>
+                <datalist id="paper">
+                    <option value="Deputy Collector">
+                    <option value="Tahsildar">
+                    <option value="STI">
+                    <option value="DYSP">
+                    <option value="PSI">
+                </datalist><br><br>
+                <label for="cars">Choose a City:</label>
+                <select name="State" id="cars">
+                    <optgroup label="Maharashtra">
+                        <option value="volvo">Sangli</option>
+                        <option value="saab">Pune</option>
+                    </optgroup>
+                    <optgroup label="Gujat">
+                        <option value="mercedes">Surat</option>
+                        <option value="audi">Gandhinagar</option>
+                    </optgroup>
+                    <optgroup label="Telangna">
+                        <option value="Hydrabad">Hydrabad</option>
+                        <option value="Banglore">Banglore</option>
+                    </optgroup>
+                </select>
+            </fieldset><br>
+            <button class="btn" type="reset">Reset</button><br>
+            <button class="btn" onclick="myFunction()">Submit</button>
+            <script>
+                function myFunction() {
+                    alert("Your Application Submitted Succefully !");
+                }
+            </script>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
