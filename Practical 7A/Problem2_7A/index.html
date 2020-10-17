@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        footer {
+            background-color: #dddddd;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Awesome Shopping Cart</h1>
+        <a href="https://www.amazon.in/">Amazon</a>&nbsp;|&nbsp;<a
+            href="https://www.flipkart.com/">Flipcart</a>&nbsp;|&nbsp;<a href="https://www.myntra.com/?">Myntra</a>
+    </header>
+    <img src="Festive-Sale.jpg" alt="Workplace" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,250,120" alt="amazon" href="https://www.amazon.in/" onclick="amazon()">
+        <area shape="circle" coords="350,55,80" alt="flipkart" href="https://www.flipkart.com/" onclick="flipcart()">
+        <area shape="rect" coords="30,150,250,220" alt="snapdel" href="https://www.snapdeal.com/" onclick="snapdeal()">
+        <area shape="poly" coords="260,185,280,150,485,150,485,220,280,220,260,185" href="https://www.myntra.com/?"
+            onclick="myntra()">
+
+    </map>
+    <script>
+        function amazon() {
+            alert("You clicked the Amazon!");
+        }
+    </script>
+    <script>
+        function flipcart() {
+            alert("You clicked the Flipcart!");
+        }
+    </script>
+    <script>
+        function snapdeal() {
+            alert("You clicked the Amazon!");
+        }
+    </script>
+    <script>
+        function myntra() {
+            alert("You clicked the Amazon!");
+        }
+    </script>
+
+
+<footer>
+    <strong>Author Information</strong>
+    <Address>
+        Owner of My Awesome Shopping Cart <a href="vishaljadhav9568@gmail.com">vishal jadhav</a>.<br>
+        More About Author :<br>
+        Software Engineer ,Programmer, Coder,Developer
+        Walchand college of engineering, sangli<br>
+        India
+    </Address>
+</footer>
+</body>
+
+</html>
