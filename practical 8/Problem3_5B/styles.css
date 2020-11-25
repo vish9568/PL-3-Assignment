@@ -1,0 +1,20 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 20px;
+    background-color: #f1f1f1;
+    
+}
+
+header {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border:2px solid #000000;
+}
+
+
+.left-column {
+    float: left;
+    width: 70%;
+}

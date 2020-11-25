@@ -1,0 +1,14 @@
+body {
+    margin-left: 200px;
+    margin-right: 200px;
+    font-style: italic;
+    background-color: #f1f1f1;
+    
+
+}
+
+kbd {
+    border-radius: 2px;
+    padding: 2px;
+    border: 1px solid black;
+}
