@@ -1,0 +1,24 @@
+.container {
+    display: inline-block;
+    border: 2px solid gray;
+    padding: 80px;
+    margin: 50px 50px;
+    width: 33%;
+    border-radius: 10px;
+    background-color:#c98391;
+
+
+}
+
+.formg input {
+    margin: 11px;
+    text-align: center;
+
+    display: block;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 400px;
+
+}
